@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Animated } from 'react-native';
 
 // Axios (para solicitudes HTTP)
 import axios from 'axios';
