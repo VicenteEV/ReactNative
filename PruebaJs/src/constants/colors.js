@@ -1,0 +1,25 @@
+import { transparent, white } from "react-native-paper/lib/typescript/styles/themes/v2/colors";
+
+export default {
+    iconBack: '#33658A',
+    backTabBar: '#050517',
+    iconFocus: '#84DCCF',
+    celeste : '#B1EDE8',
+    thistle : '#D1BCE3',
+    white : '#FFFFFF',
+    black : '#000000',
+    gray : '#808080',
+    grayLight : '#D3D3D3',
+    grayDark : '#A9A9A9',
+    transparent : 'transparent',
+    red : '#FF0000',
+    green : '#008000',
+    blue : '#0000FF',
+    yellow : '#FFFF00',
+    orange : '#FFA500',
+    purple : '#800080',
+    pink : '#FFC0CB',
+    brown : '#A52A2A',
+    gold : '#FFD700',
+    silver : '#C0C0C0',
+}
