@@ -1,15 +1,20 @@
-// src/screens/homeScreen.js
+// src/screens/HomeScreen.js
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import Icon from "react-native-vector-icons/Ionicons";
+import colors from "../constants/colors";
+import PlantillaScreen from '../components/PlantillaScreen';
 
-const myIcon = <Icon name="home" size={30} color="#000" />;
+const myIcon = <Icon name="home" size={ 24 } color={ colors.black }/>;
 
 export default function DefaultScreen({ navigation }) {
   return (
-    <View style={ styles.container }>
-      <Text style={ styles.title }>Bienvenido a la Pantalla Principal {myIcon} </Text>
-    </View>
+    <PlantillaScreen>
+
+      <Text style={ styles.title }>Bienvenido a la Pantalla Principal </Text>
+      {myIcon}
+
+    </PlantillaScreen>
   );
 }
 

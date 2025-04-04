@@ -1,16 +1,18 @@
 // src/screens/homeScreen.js
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+import PlantillaScreen from '../components/PlantillaScreen';
+import colors from '../constants/colors';
+import Icon from "react-native-vector-icons/Ionicons";
+
+const myIcon = <Icon name = 'person' color = { colors.black } size={ 24 } />
 
 export default function PfScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Perfil</Text>
-      <Button title="Home" onPress={() => navigation.navigate('Home')} />
-      <Button title="Ver Facturas" onPress={() => navigation.navigate('Facturas')} />
-      <Button title="Ver Pagos" onPress={() => navigation.navigate('Pagos')} />
-      <Button title="Perfil" onPress={() => navigation.navigate('Perfil')} />
-    </View>
+    <PlantillaScreen>
+      <Text style={ styles.title }>Bienvenido a la Pantalla del Perfil </Text>
+      {myIcon}
+    </PlantillaScreen>
   );
 }
 

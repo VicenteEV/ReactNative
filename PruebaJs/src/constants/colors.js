@@ -1,11 +1,11 @@
-import { transparent, white } from "react-native-paper/lib/typescript/styles/themes/v2/colors";
-
 export default {
+    // COLORS 1
     iconBack: '#33658A',
     backTabBar: '#050517',
     iconFocus: '#84DCCF',
     celeste : '#B1EDE8',
     thistle : '#D1BCE3',
+    // OTROS COLORES
     white : '#FFFFFF',
     black : '#000000',
     gray : '#808080',

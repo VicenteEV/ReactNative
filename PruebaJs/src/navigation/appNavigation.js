@@ -6,11 +6,11 @@ import colors from "../constants/colors";
 // import IconNave from "react-native-vector-icons/FontAwesome5";
 
 // Importación por default (asegúrate de que los archivos exporten default)
-import homeScreen from "../screens/homeScreen";
-import NaveScreen from "../screens/naveScreen";
-import PagosScreen from "../screens/pagosScreen";
-import PerfilScreen from "../screens/perfilScreen";
-import FacturaScreen from "../screens/facturaScreen";
+import HomeScreen from '../screens/HomeScreen';
+import NaveScreen from '../screens/NaveScreen';
+import PagosScreen from  '../screens/PagosScreen';
+import PerfilScreen from '../screens/PerfilScreen';
+import FacturaScreen from '../screens/FacturaScreen';
 
 // Mapa de íconos en lugar de switch-case
 // Esto permite una carga más eficiente de los íconos y evita la necesidad de un switch-case
@@ -31,6 +31,8 @@ const tabScreenOptions = {
     alignItems: 'center', // Centrar los íconos
     justifyContent: 'center', // Alinear el contenido
     marginBottom: 3, // Espacio inferior
+    marginTop: 3,
+    position: 'absolute'
   },
 };
 
@@ -39,7 +41,7 @@ function MainTabs() {
     <Tab.Navigator screenOptions={tabScreenOptions}>
       <Tab.Screen
         name="Home"
-        component={homeScreen}
+        component={HomeScreen}
         options={{
           headerShown: false,
           tabBarIcon: getTabBarIcon('home', 'Ionicons'),
@@ -114,4 +116,3 @@ const getTabBarIcon = (iconName, iconType) => ({ focused, Iconsize = 18 }) => {
     </View>
   );
 };
-
